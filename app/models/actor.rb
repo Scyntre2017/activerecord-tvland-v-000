@@ -3,6 +3,9 @@ class Actor < ActiveRecord::Base
   has_many :shows, through: :characters
 
   def full_name
-    full_name = nil
+    full_name = []
+    full_name << self.first_name
+    full_name << self.last_name
+    full_name.join
   end
 end
