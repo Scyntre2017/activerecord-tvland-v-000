@@ -19,8 +19,6 @@ ActiveRecord::Schema.define(version: 5) do
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
-    t.integer "artist_id"
-    t.integer "show_id"
   end
 
   create_table "networks", force: :cascade do |t|
