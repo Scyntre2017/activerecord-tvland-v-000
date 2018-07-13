@@ -6,6 +6,6 @@ class Actor < ActiveRecord::Base
     full_name = []
     full_name << self.first_name
     full_name << self.last_name
-    full_name.join
+    full_name.join(" ")
   end
 end
