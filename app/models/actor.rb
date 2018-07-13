@@ -4,6 +4,6 @@ class Actor < ActiveRecord::Base
 
   def full_name
     binding.pry
-    full_name = 
+    full_name =
   end
 end
